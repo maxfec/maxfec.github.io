@@ -447,6 +447,17 @@
             opacity: 0.8;
         }
 
+		.contact-email-link {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid var(--accent);
+        transition: opacity 0.2s;
+        }
+
+        .contact-email-link:hover {
+        opacity: 0.8;
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid var(--border);
@@ -552,15 +563,20 @@
 
         <!-- Top Bar -->
         <div class="top-bar">
+            <!-- LEFT: Language Switcher -->
             <div class="top-bar-left">
-                <span>
-                    <span class="lang-en">Writing · Teaching · Research</span>
-                    <span class="lang-fr">Écriture · Enseignement · Recherche</span>
-                </span>
+                <div class="lang-switch">
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                </div>
             </div>
-            <div class="lang-switch">
-                <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
-                <button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+
+            <!-- RIGHT: Contact Link -->
+            <div class="top-bar-right">
+                <a href="#contact" class="top-link">
+                    <span class="lang-en">Contact</span>
+                    <span class="lang-fr">Me joindre</span>
+                </a>
             </div>
         </div>
 
@@ -1093,12 +1109,17 @@
                     </ul>
                 </div>
 
-<div class="sidebar-card contact-block" id="contact">
+                <div class="sidebar-card contact-block" id="contact">
                     <h3>Contact</h3>
+                    
+                    <!-- 1. Email Link -->
                     <p>
-                        <span class="contact-label" hidden>Email</span>
-                        fecteau.maxime [at] uqam.ca
+                        <a href="#" id="email-link" onclick="openEmail(event)" class="contact-email-link">
+                            fecteau.maxime [at] uqam.ca
+                        </a>
                     </p>
+
+                    <!-- 2. CV Link -->
                     <p class="cv-link">
                         <a href="#">
                             <span class="lang-en">Download CV (PDF)</span>
@@ -1106,6 +1127,16 @@
                         </a>
                     </p>
                 </div>
+
+                <script>
+                    function openEmail(e) {
+                        e.preventDefault(); // Stop the # link
+                        var user = "fecteau.maxime";
+                        var domain = "uqam.ca";
+                        // Combine them only when clicked
+                        window.location.href = "mailto:" + user + "@" + domain;
+                    }
+                </script>
             </aside>
         </main>
 
