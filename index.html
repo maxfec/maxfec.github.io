@@ -292,11 +292,17 @@
         }
 
         /* Publications */
+
         .pub-group-title {
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin: 1.2rem 0 0.1rem;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 0.75rem!important;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--muted)!important;
+            margin-bottom: 1rem;
+
         }
+
 
         .pub-list {
             list-style: none;
@@ -321,9 +327,14 @@
 
         .pub-venue {
             display: block;
-			color: #999;
+            color: #999;
             font-size: 0.95rem;
             margin-top: 0.15rem;
+        }
+
+        /* Remove border from the last publication in each list */
+        .pub-list .pub-item:last-child {
+            border-bottom: none;
         }
 
                 /* Publication Pill Links */
@@ -737,8 +748,8 @@
                     </h2>
 
                     <p class="pub-group-title">
-                        <span class="lang-en">— Book</span>
-                        <span class="lang-fr">— Livre</span>
+                        <span class="lang-en">Book</span>
+                        <span class="lang-fr">Livre</span>
                     </p>
                     <ul class="pub-list">
                         <li class="pub-item">
@@ -749,8 +760,8 @@
                     </ul>
 <br>
                     <p class="pub-group-title">
-                        <span class="lang-en">— Edited Volumes</span>
-                        <span class="lang-fr">— Ouvrages dirigés</span>
+                        <span class="lang-en">Edited Volumes</span>
+                        <span class="lang-fr">Ouvrages dirigés</span>
                     </p>
 <ul class="pub-list">
                          <li class="pub-item">
@@ -780,8 +791,8 @@
 
 <br>
                     <p class="pub-group-title">
-                        <span class="lang-en">— Book Chapters</span>
-                        <span class="lang-fr">— Chapitres d’ouvrages</span>
+                        <span class="lang-en">Book Chapters</span>
+                        <span class="lang-fr">Chapitres d’ouvrages</span>
                     </p>
                     <ul class="pub-list">
                         <li class="pub-item">
@@ -799,8 +810,8 @@
                     </ul>
 <br>
 <p class="pub-group-title">
-                        <span class="lang-en">— Recent Articles & Essays</span>
-                        <span class="lang-fr">— Articles et essais récents</span>
+                        <span class="lang-en">Recent Articles & Essays</span>
+                        <span class="lang-fr">Articles et essais récents</span>
                     </p>
                     <ul class="pub-list">
                         <li class="pub-item">
