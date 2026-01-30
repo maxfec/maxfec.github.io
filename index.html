@@ -322,6 +322,47 @@
             margin-top: 0.15rem;
         }
 
+                /* Publication Pill Links */
+        .pub-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-top: 0px; /* Adds space below the text */
+        }
+
+        .pill-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* Shape & Size */
+            padding: 6px 5px;
+            border-radius: 4px; /* Rounded corners (rectangle) */
+            border: 1px solid #ddd;
+            
+            /* Typography */
+            font-family: sans-serif;
+            font-size: 0.7rem;
+            font-weight: 530;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            line-height: 1;
+            
+            /* Default Colors (Light/Neutral) */
+            background-color: #fff; /* or transparent */
+            color: #999;
+            
+            transition: all 0.2s ease;
+        }
+
+        /* Hover State (Green) */
+        .pill-link:hover {
+            border-color: var(--accent);
+            background-color: var(--accent-soft);
+            color: var(--accent);
+        }
+
         /* Sidebar */
         aside {
             font-size: 0.92rem;
@@ -705,6 +746,12 @@
                             <span class="pub-title"><span class="lang-en">Gaia: Intrusions of a Restless Earth</span><span class="lang-fr">Gaïa : intrusions d’une Terre inquiète</span></span> 
                             <span class="lang-en">(special issue)</span><span class="lang-fr">(dossier)</span><br>
                             <span class="pub-venue"><i>MuseMedusa</i>, <span class="lang-en">forthcoming</span><span class="lang-fr">à paraître</span> 2027.</span>
+                            <div class="pub-links">
+                                 <a href="https://musemedusa.com/home/appel-a-contributions/appel-dossier-15/" class="pill-link" target="_blank">
+                                    <span class="lang-en">CFP</span>
+                                    <span class="lang-fr">APPEL</span>
+                                </a>
+                            </div>
                         </li>
                          <li class="pub-item">
                             <span class="pub-title">Le savoir à l’épreuve du sensible</span> 
@@ -751,31 +798,55 @@
                         <li class="pub-item">
                             <span class="pub-title">Ma vieille, tu m’as jeté sur une nouvelle planète</span>
                             <span class="pub-venue"><i>MuseMedusa</i>, Université de Montréal, 2025.</span>
+                            <div class="pub-links">
+                                <a href="https://musemedusa.com/dossier-13/ma-vieille-tu-mas-jete-sur-une-nouvelle-planete/" class="pill-link" target="_blank">WEB</a>
+                            </div>
                         </li>
                         <li class="pub-item">
                             <span class="pub-title">Penser par les pores : la recherche-création en écocritique</span>
                             <span class="pub-venue"><i>Le crachoir de Flaubert</i>, Université Laval, 2025.</span>
+                            <div class="pub-links">
+                                <a href="https://www.lecrachoirdeflaubert.ulaval.ca/2025/05/penser-par-les-pores-la-recherche-creation-en-ecocritique/" class="pill-link" target="_blank">WEB</a>
+                            </div>
+
                         </li>
                         <li class="pub-item">
                             <span class="pub-title">“A Tough Bitch”: Lynn Margulis and the Gaian Sublime</span>
                             <span class="pub-venue"><i>Ecozon@: European Journal of Literature, Culture and Environment</i>, vol. 16, no. 1, 2025.</span>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.37536/ECOZONA.2025.16.1.5559" class="pill-link" target="_blank">DOI</a>
+                                <a href="https://ecozona.eu/article/view/5559/6339" class="pill-link" target="_blank">PDF</a>
+                            </div>
+
                         </li>
                         <li class="pub-item">
                             <span class="pub-title">My Strange Kinship with a Tick</span>
                             <span class="pub-venue"><i>Edge Effects</i>, University of Wisconsin–Madison, 2025.</span>
+                            <div class="pub-links">
+                                <a href="https://edgeeffects.net/tick-kinship/" class="pill-link" target="_blank">WEB</a>
+                            </div>
                         </li>
 <li class="pub-item">
                             <span class="pub-title">Au regard (féminin) d’une rencontre</span>
                             <span class="pub-venue"><i>Postures</i>, no 40, 2024.</span>
+                            <div class="pub-links">
+                                <a href="https://revuepostures.uqam.ca/?p=9543" class="pill-link" target="_blank">WEB</a>
+                            </div>
                         </li>
                         
                         <li class="pub-item">
                             <span class="pub-title">L’émerveillement comme levier pédagogique : apports des scientifiques-écrivaines à l’éducation relative à l’environnement</span>
                             <span class="pub-venue"><i>Éducation relative à l’environnement</i>, vol. 19.1, 2024.</span>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.4000/12wru" class="pill-link" target="_blank">DOI</a>
+                            </div>
                         </li>
                         <li class="pub-item">
                             <span class="pub-title">Traduire la sensibilité écologique par l’essai : <i>Printemps silencieux</i> de Rachel Carson</span>
                             <span class="pub-venue"><i>Éducation relative à l’environnement</i>, vol. 18.2, 2023.</span>
+                            <div class="pub-links">
+                                <a href="https://doi.org/10.4000/1241w" class="pill-link" target="_blank">DOI</a>
+                            </div>
                         </li>
                     </ul>
                 </section>
