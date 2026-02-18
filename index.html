@@ -418,6 +418,20 @@
             color: var(--accent);
         }
 
+		.profile-icon-link {
+            color: var(--accent);          /* Keeps it the same color as your text */
+            text-decoration: none;   /* Removes the underline from the icon */
+            margin-left: 4px;       /* Adds a tiny space after the name */
+            font-size: 0.8em;        /* Makes it slightly smaller than the text for subtlety */
+            opacity: 0.7;            /* Makes it slightly lighter so it doesn't distract */
+            transition: opacity 0.2s;
+        }
+
+        .profile-icon-link:hover {
+            opacity: 1;              /* Darkens when you hover over it */
+
+        }
+
         /* Sidebar */
         aside {
             font-size: 0.96rem;
@@ -928,11 +942,28 @@
                             <span class="pub-venue"><i>Voix plurielles</i>, <span class="lang-en">forthcoming</span><span class="lang-fr">à paraître</span> 2026.</span>
                         </li>
 						<li class="pub-item">
-                            <span class="pub-title">Faire de sa langue une montagne</span>
-                            <span class="lang-en">(with J. Bélanger <a href="https://jblgr.univer.se/" target="_blank">
-                                    <i class="address-card"></i></a>)</span><span class="lang-fr">(avec J. Bélanger)</span><br>
-                            <span class="pub-venue"><i>The Goose: A Journal of Arts, Environment, and Culture in Canada</i>, <span class="lang-en">forthcoming</span><span class="lang-fr">à paraître</span> 2026.</span>
-                        </li>
+						    <span class="pub-title">Faire de sa langue une montagne</span>
+						    
+						    <!-- English Version -->
+						    <span class="lang-en">(with J. Bélanger 
+						        <a href="https://jblgr.univer.se/" target="_blank" class="profile-icon-link" title="Visit Profile">
+						            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+						        </a>)
+						    </span>
+						
+						    <!-- French Version -->
+						    <span class="lang-fr">(avec J. Bélanger 
+						        <a href="https://jblgr.univer.se/" target="_blank" class="profile-icon-link" title="Voir le profil">
+						            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+						        </a>)
+						    </span>
+						    <br>
+						    
+						    <span class="pub-venue">
+						        <i>The Goose: A Journal of Arts, Environment, and Culture in Canada</i>, 
+						        <span class="lang-en">forthcoming</span><span class="lang-fr">à paraître</span> 2026.
+						    </span>
+						</li>
                         <li class="pub-item">
                             <span class="pub-title">Ma vieille, tu m’as jeté sur une nouvelle planète</span>
                         <div class="pub-meta-row">
